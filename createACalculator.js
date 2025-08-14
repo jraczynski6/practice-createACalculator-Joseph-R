@@ -25,6 +25,7 @@ where the user can select an operation and input the required values.
 0.5, 27].
 ● Generate a random number between 1 and 50.
 */
+
 const readline = require('readline-sync');
 
 function absoluteValueCalculation(num) {
@@ -58,13 +59,13 @@ function intRangeGnerator(min, max) {
     // adding min shifts the range starting at 0
 
     return Math.floor(Math.random() * (max - min +1)) + min;
-}
+};
 
-function customRounding(num, decimals){
+function customRounding(num, decimals) {
     let multiplier = Math.pow(10, decimals);
     let rounded = Math.round(num * multiplier) / multiplier;
     return rounded;
-}
+};
 
 let choice = readline.question(`
 Choose your operation: 
